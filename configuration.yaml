@@ -1,0 +1,57 @@
+mqtt:
+  broker: core-mosquitto
+  username: xxxx
+  password: xxxx
+
+light:
+  - platform: mqtt_json
+    name: TV LED Strip
+    state_topic: "tv/strip/light/status"
+    command_topic: "tv/strip/light/switch"
+    brightness_state_topic: "tv/strip/brightness/status"
+    brightness_command_topic: "tv/strip/brightness/set"
+    brightness: true
+    rgb: true
+    effect: true
+    effect_list:
+     - bpm  
+     - candy cane  
+     - animations  
+     - template  
+     - blendwave  
+     - beatwave  
+     - blur  
+     - confetti  
+     - confetti 2  
+     - confetti pal  
+     - dotbeat  
+     - easing  
+     - every n example  
+     - fill grad  
+     - inoise8 mover  
+     - inoise8 pal  
+     - noise 16 1  
+     - noise 16 2  
+     - noise 16 3  
+     - one sine pal  
+     - palette cross fade 
+     - rainbow  
+     - rainbow with glitter 
+     - rainbow march  
+     - rainbow beat  
+     - ripple pal   
+     - cyclon rainbow  
+     - dots  
+     - fire  
+     - glitter  
+     - juggle  
+     - lightning  
+     - noise  
+     - police all  
+     - police one  
+     - ripple  
+     - sinelon  
+     - solid  
+     - twinkle
+    optimistic: false
+    qos: 0
